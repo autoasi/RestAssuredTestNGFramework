@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 public class BaseTest {
 
-    @BeforeMethod
+    @BeforeMethod  // This method will run before each test
     public void beforeTest(Method m){
         System.out.println("TEST NAME: " + m.getName());
         System.out.println("THREAD ID: " + Thread.currentThread().getId());
